@@ -7,6 +7,15 @@
 
   <link rel="stylesheet" href="index.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .detail-img {
+  height: 250px;           /* Hauteur fixe pour toutes les images */
+  width: 100%;             /* Largeur responsive */
+  object-fit: cover;       /* Remplit le conteneur sans déformer l’image */
+}
+
+  </style>
 </head>
 
 <body>
@@ -44,16 +53,17 @@
 
   <!-- Photos -->
   <div class="row g-3 mb-3">
-    <div class="col-md-4">
-      <img src="voiture.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#photoModal">
-    </div>
-    <div class="col-md-4">
-      <img src="voiture2.jpg" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#photoModal">
-    </div>
-    <div class="col-md-4">
-      <img src="voiture3.jpg" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#photoModal">
-    </div>
+  <div class="col-md-4">
+    <img src="voiture.png" class="img-fluid rounded detail-img" data-bs-toggle="modal" data-bs-target="#photoModal" alt="Voiture 1">
   </div>
+  <div class="col-md-4">
+    <img src="voiture 2.jpg" class="img-fluid rounded detail-img" data-bs-toggle="modal" data-bs-target="#photoModal" alt="Voiture 2">
+  </div>
+  <div class="col-md-4">
+    <img src="voiture 3.jpg" class="img-fluid rounded detail-img" data-bs-toggle="modal" data-bs-target="#photoModal" alt="Voiture 3">
+  </div>
+</div>
+
 
   <h4>Informations du vendeur</h4>
   <p>Nom : M. Karim</p>
@@ -62,19 +72,6 @@
   <button class="btn btn-warning">Contacter le vendeur</button>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="photoModal">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img src="voiture.png" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <footer class="bg-light text-center py-3 mt-5">
   <p>&copy; 2026 Petites Annonces</p>

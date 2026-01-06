@@ -3,10 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voiture d'occasion - Détails</title>
+  <title>Appartement à vendre - Détails</title>
 
   <link rel="stylesheet" href="index.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .detail-img {
+      height: 250px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .detail-img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body>
@@ -32,32 +44,34 @@
 <!-- Détail annonce -->
 <div class="container my-5">
 
-  <h2>Voiture d'occasion - Peugeot 208</h2>
-  <p><strong>Prix :</strong> 45 000 DT</p>
-  <p><strong>Année :</strong> 2020</p>
-  <p><strong>Localisation :</strong> Sfax</p>
-  <p><strong>Date de publication :</strong> 05/01/2026</p>
+  <h2>Appartement à vendre - S+2 Centre-ville</h2>
+  <p><strong>Prix :</strong> 150 000 DT</p>
+  <p><strong>Superficie :</strong> 120 m²</p>
+  <p><strong>Localisation :</strong> Tunis</p>
+  <p><strong>Date de publication :</strong> 01/01/2026</p>
 
   <p>Description :  
-    Voiture en excellent état, faible kilométrage, entretien régulier chez concessionnaire.
+    Appartement spacieux S+2 avec balcon, cuisine équipée, lumineux et proche des commodités. 
+    Idéal pour famille ou investissement.
   </p>
 
-  <!-- Photos -->
-  <div class="row g-3 mb-3">
-    <div class="col-md-4">
-      <img src="voiture.png" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#photoModal">
-    </div>
-    <div class="col-md-4">
-      <img src="voiture2.jpg" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#photoModal">
-    </div>
-    <div class="col-md-4">
-      <img src="voiture3.jpg" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#photoModal">
-    </div>
+ <!-- Photos -->
+<div class="row g-3 mb-3">
+  <div class="col-md-4">
+    <img src="appartement.jpg" class="img-fluid rounded detail-img" alt="Photo appartement 1">
   </div>
+  <div class="col-md-4">
+    <img src="maison 2.jpg" class="img-fluid rounded detail-img" alt="Photo appartement 2">
+  </div>
+  <div class="col-md-4">
+    <img src="maison 3.jpg" class="img-fluid rounded detail-img" alt="Photo appartement 3">
+  </div>
+</div>
+
 
   <h4>Informations du vendeur</h4>
-  <p>Nom : M. Karim</p>
-  <p>Téléphone : 22 000 555</p>
+  <p>Nom : M. Ahmed</p>
+  <p>Téléphone : 55 555 555</p>
 
   <button class="btn btn-warning">Contacter le vendeur</button>
 </div>
@@ -67,7 +81,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="voiture.png" class="img-fluid">
+        <img src="appartement.jpg" class="img-fluid" alt="Photo agrandie">
       </div>
       <div class="modal-footer">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
