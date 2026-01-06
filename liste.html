@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liste des Annonces</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -15,6 +16,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
@@ -36,16 +38,17 @@
 <!-- Grille des annonces -->
 <div class="container mt-4">
   <h2 class="mb-4 text-center">Toutes les annonces</h2>
+
   <div class="row g-4">
 
-    <!-- Carte annonce -->
+    <!-- Carte annonce 1 -->
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Annonce">
+        <img src="appartement.jpg" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Appartement à louer</h5>
-          <p class="card-text">Centre-ville - 700€/mois</p>
-          <p class="card-text"><small>Localisation: Tunis</small></p>
+          <h5 class="card-title">Appartement à vendre</h5>
+          <p class="card-text">Centre-ville - 150 000€</p>
+          <p class="card-text"><small>Localisation : Tunis</small></p>
           <a href="detail.html" class="btn btn-primary">Voir détail</a>
         </div>
       </div>
@@ -54,11 +57,11 @@
     <!-- Carte annonce 2 -->
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Annonce">
+        <img src="voiture.png" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Voiture Renault Clio</h5>
-          <p class="card-text">2018 - 8 500€</p>
-          <p class="card-text"><small>Localisation: Sfax</small></p>
+          <h5 class="card-title">Voiture d'occasion</h5>
+          <p class="card-text">Peugeot 208 - 2020</p>
+          <p class="card-text"><small>Localisation : Sfax</small></p>
           <a href="detail.html" class="btn btn-primary">Voir détail</a>
         </div>
       </div>
@@ -67,23 +70,52 @@
     <!-- Carte annonce 3 -->
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Annonce">
+        <img src="dev.jpeg" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Offre d'emploi: Développeur</h5>
-          <p class="card-text">Poste à temps plein</p>
-          <p class="card-text"><small>Localisation: Tunis</small></p>
+          <h5 class="card-title">Offre d'emploi</h5>
+          <p class="card-text">Développeur web - Temps plein</p>
+          <p class="card-text"><small>Localisation : Tunis</small></p>
           <a href="detail.html" class="btn btn-primary">Voir détail</a>
         </div>
       </div>
     </div>
 
-    <!-- Tu peux dupliquer ces cartes pour atteindre 12 annonces -->
+    <!-- Carte annonce 4 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="maison.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Maison à louer</h5>
+          <p class="card-text">3 chambres - 900€/mois</p>
+          <p class="card-text"><small>Localisation : Ariana</small></p>
+          <a href="detail.html" class="btn btn-primary">Voir détail</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte annonce 5 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="pc.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">PC Portable</h5>
+          <p class="card-text">i5 • 16 Go RAM • SSD 512 Go — 1200€</p>
+          <p class="card-text"><small>Localisation : Nabeul</small></p>
+          <a href="detail.html" class="btn btn-primary">Voir détail</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
+
 <!-- Footer -->
-<footer class="bg-light text-center py-3 mt-5">
-  <p>&copy; 2026 Petites Annonces | <a href="apropos.html">À propos</a> | <a href="contact.html">Contact</a></p>
+<footer class="text-center py-3 mt-5 bg-light">
+  <p>&copy; 2026 Petites Annonces | 
+    <a href="apropos.html">À propos</a> | 
+    <a href="contact.html">Contact</a>
+  </p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

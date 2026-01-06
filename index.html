@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petites Annonces</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS custom -->
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -15,6 +20,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
@@ -26,33 +32,33 @@
   </div>
 </nav>
 
-<!-- Jumbotron / Hero -->
-<div class="p-5 mb-4 bg-primary text-white rounded-3 text-center">
+<!-- Hero -->
+<div class="hero mb-4 text-center">
   <h1>Bienvenue sur Petites Annonces</h1>
   <p>Consultez facilement des annonces dans diverses catégories</p>
-  <input type="text" class="form-control w-50 mx-auto" placeholder="Rechercher...">
+  <input type="text" class="form-control mx-auto" placeholder="Rechercher...">
 </div>
 
 <!-- Catégories -->
-
 <div class="container mb-5">
   <h2 class="mb-4 text-center">Nos catégories</h2>
 
   <div id="categoriesCarousel" class="carousel slide" data-bs-ride="carousel">
-    
+
     <div class="carousel-inner">
 
+      <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="row text-center">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img src="immobilier.jpg" class="img-fluid mb-2" style="height:150px;">
             <p>Immobilier</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img src="vehicule.jpg" class="img-fluid mb-2" style="height:150px;">
             <p>Véhicules</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img src="emploi.jpg" class="img-fluid mb-2" style="height:150px;">
             <p>Emploi</p>
           </div>
@@ -62,15 +68,15 @@
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="row text-center">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img src="service.jpeg" class="img-fluid mb-2" style="height:150px;">
             <p>Services</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img src="maison.jpg" class="img-fluid mb-2" style="height:150px;">
             <p>Maisons</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <img src="electronique.jpg" class="img-fluid mb-2" style="height:150px;">
             <p>Électronique</p>
           </div>
@@ -91,24 +97,25 @@
   </div>
 </div>
 
-
 <!-- Annonces récentes -->
 <div class="container mb-5">
   <h2 class="mb-4 text-center">Annonces récentes</h2>
   <div class="row g-4">
+
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/300" class="card-img-top">
+        <img src="appartement.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Appartement à vendre</h5>
-          <p class="card-text">Centre-ville - 150 000€</p>
+          <p class="card-text">Centre-ville - 500 000dt</p>
           <a href="detail.html" class="btn btn-primary">Voir détail</a>
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/300" class="card-img-top">
+        <img src="voiture.png" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Voiture d'occasion</h5>
           <p class="card-text">Peugeot 208 - 2020</p>
@@ -116,9 +123,10 @@
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/300" class="card-img-top">
+        <img src="dev.jpeg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Offre d'emploi</h5>
           <p class="card-text">Développeur web - Tunis</p>
@@ -126,12 +134,16 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="bg-light text-center py-3 mt-5">
-  <p>&copy; 2026 Petites Annonces | <a href="apropos.html">À propos</a> | <a href="contact.html">Contact</a></p>
+<footer class="text-center py-3 mt-5">
+  <p>&copy; 2026 Petites Annonces | 
+    <a href="apropos.html">À propos</a> | 
+    <a href="contact.html">Contact</a>
+  </p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>

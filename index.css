@@ -1,0 +1,107 @@
+/* -----------------------
+   NAVBAR
+------------------------ */
+.navbar {
+  padding: 15px 0;
+  font-size: 17px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* -----------------------
+   HERO SECTION
+------------------------ */
+.hero {
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  padding: 70px 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+.hero input {
+  max-width: 450px;
+  border-radius: 30px;
+  padding: 12px 20px;
+  border: none;
+}
+
+/* -----------------------
+   CATÉGORIES CAROUSEL
+------------------------ */
+#categoriesCarousel img {
+  transition: transform 0.3s;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#categoriesCarousel img:hover {
+  transform: scale(1.05);
+}
+
+#categoriesCarousel p {
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* Fleches du carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* -----------------------
+   ANNONCES
+------------------------ */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* -----------------------
+   FOOTER
+------------------------ */
+footer {
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#categoriesCarousel .carousel-control-prev,
+#categoriesCarousel .carousel-control-next {
+  width: 4%;
+}
+
+#categoriesCarousel .carousel-control-prev-icon,
+#categoriesCarousel .carousel-control-next-icon {
+  filter: invert(1);         
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
